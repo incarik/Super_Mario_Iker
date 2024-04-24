@@ -61,4 +61,9 @@ public class MenuManager : MonoBehaviour
         Coin.OnCoinCollected -= CoinCollected;
         Enemy.OnEnemyDestroyed -= EnemyDestroyedHandler;
     }
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }
